@@ -1,0 +1,26 @@
+{
+  "name": "utsresapii",
+  "version": "1.0.0",
+  "description": "pemrogramn web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeffanyasyahriel/utsresapii.git"
+  },
+  "keywords": [
+    "res",
+    "api\u001b[D\u001b[D\u001b[D\u001b[Dt",
+    "\u001b[t",
+    "api",
+    "nodejs"
+  ],
+  "author": "zeffa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeffanyasyahriel/utsresapii/issues"
+  },
+  "homepage": "https://github.com/zeffanyasyahriel/utsresapii#readme"
+}
