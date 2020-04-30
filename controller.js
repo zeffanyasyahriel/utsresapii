@@ -68,5 +68,40 @@ exports.tambahservis = function (req, res) {
             } else {
                 response.ok("Berhasil Menambahkan Data", res)
             }
+		});
+	};
+	//menambahkan data level
+exports.tambahlevel = function (req, res) {
+    var nama_level = req.body.nama_level;
+    var role = req.body.role;
+
+
+    connection.query('INSERT INTO t_level (nama_level, role) VALUES(?,?)',
+        [nama_level, role], 
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Berhasil Menambahkan Data", res)
+            }
         });
 };
+//menambahkan data User
+exports.tambahuser = function (req, res) {
+    var username = req.body.username;
+    var email = req.body.email;
+    var password = req.body.password;
+    var role = req.body.role;
+    var tanggal_daftar = new Date();
+
+
+    connection.query('INSERT INTO t_user (username, email, password, role, tanggal_daftar) VALUES(?,?,?,?,?)',
+        [username, email, password, role, tanggal_daftar], 
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok("Berhasil Menambahkan Data", res)
+            }
+        });
+}

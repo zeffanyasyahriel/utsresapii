@@ -5,18 +5,24 @@ module.exports = function(app) {
 
     app.route('/')
         .get(jsonku.index);
-        app.route('/tampil')
+         app.route('/tampil')
           .get(jsonku.tampilsparepart);
 
          app.route('/tampilmontir')
-         .get(jsonku.tampildatamontir);
+         .  get(jsonku.tampildatamontir);
 
          app.route('/tampil/:id')
-         .get(jsonku.tampildatasparepartid);
+            .get(jsonku.tampildatasparepartid);
          
          app.route('/tampilmontir/:id')
             .get(jsonku.tampildatamontirid);
 
          app.route('/tambahservis')
             .post(jsonku.tambahservis);
+
+         app.route('tambahlevel')
+            .post(jsonku.tambahlevel);
+
+         app.route('/tambahuser')
+            .post(jsonku.tambahuser)
 }
