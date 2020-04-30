@@ -31,4 +31,7 @@ module.exports = function(app) {
 
          app.route('/tambahsparepart')
             .post(jsonku.tambahsparepart)
+
+         app.route('/ubahmontir')
+            .put(jsonku.ubahmontir);
 }
