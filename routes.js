@@ -52,5 +52,8 @@ module.exports = function(app) {
 
          app.route('/hapussparepart')
             .delete(jsonku.hapusSparepart);
+
+         app.route('/hapususer')
+            .delete(jsonku.hapusUSer)
 }
 
